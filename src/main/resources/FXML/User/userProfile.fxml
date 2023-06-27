@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="profile_container" stylesheets="@../../Styles/userProfile.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.user.UserProfileController">
+   <VBox layoutX="14.0" layoutY="71.0" prefHeight="450.0" prefWidth="600.0" styleClass="vbox" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="71.0">
+      <HBox prefHeight="60.0" prefWidth="400.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="First Name:" />
+         <Label fx:id="firstName" text="Label" />
+         <styleClass>
+            <String fx:value="hbox" />
+            <String fx:value="text" />
+            <String fx:value="label" />
+         </styleClass>
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="400.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+         <Label fx:id="lastName" text="Label" />
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="400.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+         <Label fx:id="userName_lbl" text="Label" />
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="400.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="School/College/Graduation" wrappingWidth="82.0" />
+         <TextField fx:id="grade_fld" editable="false" styleClass="input_fld" />
+         <Button fx:id="grade_edit_btn" mnemonicParsing="false" text="Edit">
+            <graphic>
+               <FontAwesomeIconView glyphName="EDIT" size="20" />
+            </graphic></Button>
+      </HBox>
+   </VBox>
+   <Button fx:id="chP_btn" layoutX="680.0" layoutY="358.0" mnemonicParsing="false" text="Change Password" AnchorPane.bottomAnchor="357.6" AnchorPane.topAnchor="358.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="EDIT" size="20" />
+      </graphic></Button>
+   <Button fx:id="back_btn" layoutX="2.0" layoutY="2.0" mnemonicParsing="false">
+      <graphic>
+         <FontAwesomeIconView glyphName="LONG_ARROW_LEFT" size="18" />
+      </graphic>
+   </Button>
+   <Text fill="#333232" layoutX="740.8750000000005" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" AnchorPane.rightAnchor="12.937499999999545">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Label fx:id="date_lbl" layoutX="748.0" layoutY="37.0" text="2023-03-04" AnchorPane.leftAnchor="748.0" AnchorPane.rightAnchor="19.600000000000023">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
+   <Button fx:id="grade_update_btn" layoutX="229.0" layoutY="554.0" mnemonicParsing="false" text="Update">
+      <graphic>
+         <FontAwesomeIconView glyphName="EDIT" size="20" />
+      </graphic>
+   </Button>
+</AnchorPane>

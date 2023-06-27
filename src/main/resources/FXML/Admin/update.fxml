@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="update_container" stylesheets="@../../Styles/update.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.admin.UpdateController">
+    <HBox layoutX="250.0" layoutY="21.0" prefHeight="50.0" prefWidth="450.0">
+        <TextField fx:id="search_grade_text_field" />
+        <Button fx:id="search_btn" mnemonicParsing="false" text="Search">
+         <graphic>
+            <FontAwesomeIconView glyphName="SEARCH" />
+         </graphic></Button>
+    </HBox>
+    <Label fx:id="error_lbl" layoutX="381.0" layoutY="78.0" textFill="#0804ea" />
+    <TextArea fx:id="edit_text_area" editable="false" layoutX="19.0" layoutY="102.0" prefHeight="600.0" prefWidth="830.0" wrapText="true" AnchorPane.leftAnchor="10.0" />
+    <Button fx:id="edit_btn" layoutX="803.0" layoutY="66.0" mnemonicParsing="false" text="Edit" AnchorPane.rightAnchor="14.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="EDIT" />
+      </graphic></Button>
+    <Button fx:id="update_btn" layoutX="396.0" layoutY="711.0" mnemonicParsing="false" text="Update" AnchorPane.leftAnchor="396.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="EDIT" />
+      </graphic></Button>
+</AnchorPane>

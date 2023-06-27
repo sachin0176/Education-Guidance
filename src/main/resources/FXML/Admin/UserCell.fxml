@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.GlyphsStack?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="50.0" prefWidth="700.0" styleClass="user_cell_container" stylesheets="@../../Styles/usercell.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <FontAwesomeIconView glyphName="USER" layoutX="14.0" layoutY="33.0" size="20" AnchorPane.leftAnchor="14.0" />
+   <HBox layoutX="57.0" prefHeight="50.0" prefWidth="600.0" styleClass="hbox">
+      <Label fx:id="first_name_lbl" text="Label" />
+      <Label fx:id="last_name_lbl" layoutX="10.0" layoutY="10.0" text="Label" />
+      <Label fx:id="user_name_lbl" layoutX="38.0" layoutY="10.0" text="Label" />
+      <Label fx:id="grade_lbl" text="Label" />
+      <Label fx:id="date_lbl" layoutX="66.0" layoutY="10.0" text="Label" />
+   </HBox>
+   <GlyphsStack />
+</AnchorPane>

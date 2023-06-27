@@ -1,0 +1,86 @@
+.main_create_container{
+-fx-background-color: #FFFFFF;
+}
+
+.create_container{
+-fx-spacing: 20;
+-fx-alignment: center;
+}
+/* Text fields */
+.create_container VBox {
+   -fx-spacing: 20;
+   -fx-padding: 0 0 0 20;
+   -fx-background-color: #FFFFFF;
+   -fx-alignment: center;
+
+}
+
+ .vbox{
+    -fx-spacing: 42;
+    -fx-padding: 0 20 0 0;
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center_left;
+
+}
+
+.vbox Text{
+-fx-font-size: 1.4em;
+    -fx-font-family: "Calibri Light"
+}
+.create_container VBox TextField{
+    -fx-text-fill: black;
+    -fx-font-size: 1.3em;
+    -fx-max-width: 250;
+    -fx-pref-height: 45;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: .2em;
+    -fx-border-color: #d9d9d9;
+    -fx-border-radius: 1px;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5,0,0 ,6);
+    -fx-font-family: "Calibri Light"
+
+}
+
+/* Button to create account */
+#create_bt {
+    -fx-background-color: linear-gradient(to right, #132A13, #253F25);
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3,0,0 ,3);
+    -fx-border-width: 2px;
+    -fx-border-color: #4CAF50;
+    -fx-border-radius: 10px;
+
+}
+#create_bt:hover{
+    -fx-background-color:#FFFFFF;
+    -fx-border-width: 2px;
+    -fx-border-color: #4CAF50;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #4CAF50;
+    -fx-cursor: hand;
+
+
+}
+
+/* Error label */
+#error_lbl {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}
+
+/* Button to go back */
+#go_back_btn {
+    -fx-background-color: transparent;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}
+
+/* FontAwesomeIconView */
+#go_back_btn .glyph-icon {
+    -fx-fill: #428bca;
+    -fx-font-size: 18px;
+}
+
