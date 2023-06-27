@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1030.0" styleClass="main_container" stylesheets="@../../Styles/grade.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.user.GradeController">
+   <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu_container">
+      <AnchorPane prefHeight="720.0" prefWidth="160.0" styleClass="left_container">
+         <VBox layoutX="4.0" prefHeight="140.0" prefWidth="160.0" styleClass="title_container">
+            <ImageView fitHeight="150.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" styleClass="title_container">
+               <image>
+                  <Image url="@../../Image/iconsm.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Education Guidance" />
+         </VBox>
+         <VBox layoutX="9.0" layoutY="163.0" prefHeight="400.0" prefWidth="160.0" styleClass="grade_container">
+            <Button fx:id="latest_tech_btn" mnemonicParsing="false" text="Latest Technology" />
+            <Button fx:id="profile_btn" mnemonicParsing="false" text="Profile">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_ALT" size="20" />
+               </graphic></Button>
+            <Button fx:id="logout_btn" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Logout">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" fontSmoothingType="LCD" glyphName="EXTERNAL_LINK" size="20" />
+               </graphic></Button>
+         </VBox>
+         <VBox layoutX="4.0" layoutY="606.0" prefHeight="120.0" prefWidth="130.0" styleClass="report_container">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Report Suggestion/Bug?" />
+            <Label text="Use this to report any errors or suggestions." />
+            <Button fx:id="report_btn" mnemonicParsing="false" text="Report">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </VBox>
+      </AnchorPane>
+   </VBox>
+   <GridPane alignment="CENTER" hgap="5.0" prefHeight="750.0" prefWidth="850.0" styleClass="grid-pane" vgap="5.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="12.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="60.8" minHeight="10.0" percentHeight="15.0" prefHeight="60.8" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="12.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="15.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="12.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="12.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="12.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="0.0" percentHeight="15.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <HBox.margin>
+         <Insets />
+      </HBox.margin>
+      <Button fx:id="inter_btn" mnemonicParsing="false" text="12th" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="grade2_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Class 2" GridPane.rowIndex="1" />
+      <Button fx:id="grade3_btn" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" text="Class 3" GridPane.rowIndex="2" />
+      <Button fx:id="grade4_btn" layoutX="10.0" layoutY="159.0" mnemonicParsing="false" text="Class 4" GridPane.rowIndex="3" />
+      <Button fx:id="grade5_btn" layoutX="10.0" layoutY="224.0" mnemonicParsing="false" text="Class 5" GridPane.rowIndex="4" />
+      <Button fx:id="grade7_btn" layoutX="10.0" layoutY="296.0" mnemonicParsing="false" text="Class 7" GridPane.rowIndex="6" />
+      <Button fx:id="grade6_btn" layoutX="10.0" layoutY="296.0" mnemonicParsing="false" text="Class 6" GridPane.rowIndex="5" />
+      <Button fx:id="grade8_btn" layoutX="10.0" layoutY="455.0" mnemonicParsing="false" text="Class 8" GridPane.rowIndex="7" />
+      <Button fx:id="grade10_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Class 10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="grade9_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Class 9" GridPane.columnIndex="1" />
+      <Button layoutX="289.0" layoutY="224.0" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+      <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+      <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+      <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+      <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+      <Button fx:id="defence_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Defence" GridPane.columnIndex="2" />
+      <Button fx:id="bachelors_degree_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Bachelor's Degree" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Button fx:id="doctor_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Doctors" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="neet_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Neet" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="iit_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="IITian" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="master_degree_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Master's Degree" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Button fx:id="engr_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Engineering" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Button fx:id="scientist_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Scientist" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Button fx:id="pro_lan_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Programming Language" GridPane.columnIndex="3" />
+      <Button fx:id="gate_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Gate" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button fx:id="law_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Law" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="civil_service_btn" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Civil Service" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="grade1_btn" layoutX="568.0" layoutY="595.0" mnemonicParsing="false" text="Class 1" />
+      <Button fx:id="military_school_btn" mnemonicParsing="false" text="Military School" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="ncc_btn" mnemonicParsing="false" text="NCC" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   </GridPane>
+</HBox>

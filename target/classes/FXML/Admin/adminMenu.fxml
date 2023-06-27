@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" stylesheets="@../../Styles/adminmenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.admin.AdminMenuController">
+   <styleClass>
+      <String fx:value="main_menu_container" />
+      <String fx:value="main_menu_container" />
+   </styleClass>
+   <AnchorPane prefHeight="730.0" prefWidth="160.0" styleClass="left_container">
+      <VBox layoutX="10.0" prefHeight="100.0" prefWidth="160.0" styleClass="logo_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <ImageView fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../Image/iconsm.png" />
+            </image>
+         </ImageView>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Educatin Guidance" />
+      </VBox>
+      <VBox layoutX="14.0" layoutY="165.0" prefHeight="400.0" prefWidth="160.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Button fx:id="latest_user_btn" mnemonicParsing="false" text="Latest Users">
+            <graphic>
+               <FontAwesomeIconView glyphName="LIST" />
+            </graphic>
+         </Button>
+         <Button fx:id="all_user_btn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="All Users">
+            <graphic>
+               <FontAwesomeIconView glyphName="LIST" />
+            </graphic>
+         </Button>
+         <Button fx:id="update_btn" mnemonicParsing="false" text="Update">
+            <graphic>
+               <FontAwesomeIconView glyphName="EDIT" size="20" />
+            </graphic></Button>
+         <Button fx:id="logout_btn" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" text="Logout">
+            <graphic>
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" />
+            </graphic>
+         </Button>
+      </VBox>
+      <Button fx:id="feedback_btn" layoutX="70.0" layoutY="692.0" mnemonicParsing="false" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="BELL" />
+         </graphic>
+      </Button>
+   </AnchorPane>
+</VBox>

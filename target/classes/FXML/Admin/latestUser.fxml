@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" styleClass="user_container" stylesheets="@../../Styles/allUser.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.admin.latestUserController">
+   <Label layoutX="411.0" layoutY="14.0" text="Latest Users" AnchorPane.leftAnchor="377.0" />
+   <ListView fx:id="latest_user_list_view" layoutX="19.0" layoutY="50.0" prefHeight="700.0" prefWidth="830.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+</AnchorPane>

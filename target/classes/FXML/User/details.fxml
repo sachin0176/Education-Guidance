@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1030.0" styleClass="detail_container" stylesheets="@../../Styles/details.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <Label fx:id="date_lbl" layoutX="738.0" layoutY="13.0" text="Today 2023-03-28" AnchorPane.rightAnchor="14.0" />
+   <TextArea fx:id="text_area" editable="false" layoutX="9.0" layoutY="59.0" prefHeight="690.0" prefWidth="1010.0" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="59.0" />
+   <Label fx:id="grade_lbl" layoutX="16.0" layoutY="26.0" text="lbl" />
+   <Button fx:id="back_btn" mnemonicParsing="false">
+      <graphic>
+         <FontAwesomeIconView glyphName="LONG_ARROW_LEFT" size="20" />
+      </graphic>
+   </Button>
+</AnchorPane>

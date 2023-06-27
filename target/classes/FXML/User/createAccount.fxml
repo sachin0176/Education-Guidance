@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="main_create_container" stylesheets="@../../Styles/createAccount.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.educationguidance.controller.user.CreateAccountController">
+   <Button fx:id="go_back_btn" mnemonicParsing="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="LONG_ARROW_LEFT" size="18" />
+      </graphic>
+   </Button>
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+      <image>
+         <Image url="@../../Image/iconsm.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="create_bt" layoutX="375.0" layoutY="650.0" mnemonicParsing="false" text="Create" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.4" />
+   <HBox layoutY="152.0" prefHeight="480.0" prefWidth="850.0" styleClass="create_container" AnchorPane.leftAnchor="0.0">
+      <VBox prefHeight="200.0" prefWidth="200.0" styleClass="vbox">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="School/College/Graduation:" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:" />
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="400.0">
+         <TextField fx:id="firstName_fld" styleClass="text-field" />
+         <TextField fx:id="lastName_fld" />
+         <TextField fx:id="userName_fld" />
+         <TextField fx:id="grade_level_fld" />
+         <TextField fx:id="password_fld" />
+         <TextField fx:id="conf_password_fld" />
+      </VBox>
+   </HBox>
+   <Label fx:id="error_lbl" layoutX="410.0" layoutY="704.0" wrapText="true" AnchorPane.leftAnchor="410.0" />
+</AnchorPane>
